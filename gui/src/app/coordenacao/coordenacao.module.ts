@@ -6,6 +6,7 @@ import { CoordenacaoComponent } from './coordenacao.component';
   imports: [
     CommonModule
   ],
-  declarations: [CoordenacaoComponent]
+  declarations: [CoordenacaoComponent],
+  exports: [CoordenacaoComponent]
 })
 export class CoordenacaoModule { }

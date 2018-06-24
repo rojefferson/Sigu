@@ -4,10 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { AlunoComponent } from './aluno/aluno.component';
 import { CoordenacaoComponent } from './coordenacao/coordenacao.component';
 const routes: Routes = [
-  { path: 'Home', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: '/Aluno',component: AlunoComponent},
-  { path: '/Corrdenacao', component: CoordenacaoComponent}
+  { path: 'aluno',component: AlunoComponent},
+  { path: 'corrdenacao', component: CoordenacaoComponent}
   ];
 
 @NgModule({
