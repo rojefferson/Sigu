@@ -11,4 +11,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
  cursos = ["Ciência da computação","curso 2","curso 3"]
+
+
+ 
 }
