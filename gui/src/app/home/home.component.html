@@ -1,5 +1,12 @@
 <p>
-  home works!
+  {{teste}}
 </p>
 
 
+<div style="text-align: center">
+  <h1>Digite o curso </h1>
+    <select>
+     <option class='option' *ngFor='let option of cursos' [value]="option">{{option}}</option>
+  </select>
+  <button name="btnCurso" style="padding-right: 20">ir </button>
+</div>
