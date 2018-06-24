@@ -6,6 +6,7 @@ import { AlunoComponent } from './aluno.component';
   imports: [
     CommonModule
   ],
-  declarations: [AlunoComponent]
+  declarations: [AlunoComponent],
+  exports: [AlunoComponent]
 })
 export class AlunoModule { }
