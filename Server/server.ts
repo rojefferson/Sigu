@@ -12,11 +12,14 @@ app.use(allowCrossDomain);
 
 app.use(bodyParser.json());
 
-
-
+app.get('/logar', function (req, res) {
+    var user_id = req.param('login');
+    var token = req.param('senha');
+    res.send(user_id + ' ' + token + ' ' + geo);
+  });
 
 var server = app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+    
   })
   
   function closeServer(): void {
