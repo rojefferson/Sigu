@@ -1,12 +1,9 @@
-<p>
-  {{teste}}
-</p>
 
-
-<div style="text-align: center">
-  <h1>Digite o curso </h1>
-    <select>
-     <option class='option' *ngFor='let option of cursos' [value]="option">{{option}}</option>
-  </select>
-  <button name="btnCurso" style="padding-right: 20">ir </button>
-</div>
+ <div  style="text-align: center">
+    <h1>Bem vindo ao Sigu</h1>
+  <form (submit)='onSubmit(form)' [formGroup]="userForm">
+    <input type="text" class="form-control" formControlName="login"><br>
+    <input type="text" class="form-control" formControlName="senha">
+    <button  type="submit">Login</button>
+  </form>
+ </div>
