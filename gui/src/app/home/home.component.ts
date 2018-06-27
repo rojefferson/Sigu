@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { HomeService } from './home.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +8,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 })
 export class HomeComponent implements OnInit {
   userForm: FormGroup;
-  constructor() {
+  constructor(servidor : HomeService) {
    
    }
 
@@ -19,9 +20,10 @@ export class HomeComponent implements OnInit {
   }
   
   onSubmit(form): void {
-    console.log("asduhaudhsaudhsauhda");
+    
+    console.log(this.userForm.value.login);
   }
   
-
+  
  
 }
