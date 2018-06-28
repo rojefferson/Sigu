@@ -2,3 +2,5 @@ cadastro de formulários --post
 obter número de vagas sugerido --get
 relatório de situação de matricula --get
 relatório de disciplina --get
+lidar com solicitação de disciplina
+"api" para simular o siga
